@@ -19,7 +19,7 @@ const id = params.get("id");
 /* 🔹 GET EMPLOYEE DATA (PREFILL) */
 async function getEditEmployee() {
   try {
-    const resp = await fetch(`http://localhost:5000/employees/${id}`);
+    const resp = await fetch(`https://crud-app-mtl3.onrender.com/employees/${id}`);
     const data = await resp.json();
 
     firstNameEle.value = data.firstname;
@@ -65,7 +65,7 @@ employeeFormEle.addEventListener("submit", async (e) => {
   };
 
   try {
-    const resp = await fetch(`http://localhost:5000/employees/${id}`, {
+    const resp = await fetch(`https://crud-app-mtl3.onrender.com/employees/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
