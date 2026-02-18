@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/CreateEmployee.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar-container">
+      <figure class="logo"><a href="/index.html">CRUD-APP</a></figure>
+
+      <div class="nav-links">
+        <a href="./CreateEmployee.html">Create Employee </a>
+        <a href="./AllEmployees.html">All Employees</a>
+      </div>
+    </nav>
+
+    <!--REGISTRATION FORM-->
+    <div class="form-container">
+      <div class="form-heading">
+        <img src="../assets/image.png" alt="logo" />
+        <div class="form-description">
+          <h1>Employee Registration Form</h1>
+          <p>
+            Please fill out the form for an HR department to complete your
+            registration. An HR Manager will contact you with further
+            instructions.
+          </p>
+        </div>
+      </div>
+      <form id="registration-form">
+        <section>
+          <label for="first-name">Full Name</label>
+          <div class="name-fields">
+            <input
+              type="text"
+              id="first-name"
+              name="firstName"
+              required
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              id="middle-name"
+              name="middleName"
+              placeholder="Middle Name"
+            />
+            <input
+              type="text"
+              id="last-name"
+              name="lastName"
+              placeholder="Last Name"
+            />
+          </div>
+        </section>
+
+        <section class="basic-details">
+          <div class="marital-status">
+            <label for="marital-status">Marital Status</label>
+            <select id="marital-status" name="maritalStatus">
+              <option selected disabled hidden></option>
+              <option value="married">Married</option>
+              <option value="unmarried">Unmarried</option>
+              <option value="divorced">Divorced</option>
+            </select>
+          </div>
+
+          <div class="dob">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dateOfBirth" required />
+          </div>
+
+          <div class="email">
+            <label for="email">E-Mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="E-mail"
+            />
+          </div>
+
+          <div class="mobile">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobileNumber" required />
+          </div>
+        </section>
+
+        <section>
+          <label for="street-address">Home Address</label>
+          <div class="address-grid">
+            <input
+              type="text"
+              id="street-address"
+              name="streetAddress"
+              required
+              placeholder="Street Address"
+            />
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+              placeholder="City"
+            />
+            <input
+              type="text"
+              id="state"
+              name="state"
+              placeholder="State/Province"
+            />
+            <input
+              type="text"
+              id="country"
+              name="country"
+              required
+              placeholder="Country"
+            />
+            <input
+              type="text"
+              id="zipcode"
+              name="zipCode"
+              required
+              placeholder="ZIP Code"
+            />
+          </div>
+        </section>
+
+        <button type="submit">REGISTER ME</button>
+      </form>
+    </div>
+    <script src="/scripts/CreateEmployee.js"></script>
+  </body>
+</html>

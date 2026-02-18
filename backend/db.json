@@ -1,0 +1,38 @@
+{
+  "employees": [
+    {
+      "firstname": "Shalini",
+      "middlename": "",
+      "lastname": "Singh",
+      "dob": "2026-02-12",
+      "email": "gsdhjds@gmail.com",
+      "maritalstatus": "married",
+      "phoneno": "26238923932",
+      "address": {
+        "street": "Puda Colony",
+        "city": "Mal",
+        "state": "Punjab",
+        "country": "India",
+        "zipcode": "152107"
+      },
+      "id": "87af"
+    },
+    {
+      "id": "411a",
+      "firstname": "Himanshu",
+      "middlename": "",
+      "lastname": "yadav",
+      "dob": "2026-03-06",
+      "email": "himanshu@gmail.com",
+      "maritalstatus": "unmarried",
+      "phoneno": "5362728292",
+      "address": {
+        "street": "Puda Colony",
+        "city": "Malout",
+        "country": "India",
+        "state": "Punjab",
+        "zipcode": "152107"
+      }
+    }
+  ]
+}

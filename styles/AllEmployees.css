@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f6f9;
+}
+
+/* NAVBAR */
+
+.navbar-container {
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.nav-links > a {
+  margin: 5px 10px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.nav-links > a:hover {
+  background-color: white;
+  color: #2c5364;
+}
+
+/* HEADING */
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  padding: 40px 0 20px;
+  font-size: 42px;
+  color: #2c5364;
+}
+
+/* EMPLOYEE CONTAINER */
+
+#employees-container {
+  padding: 40px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* CARD DESIGN */
+
+.emp-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+
+.emp-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+
+.emp-header h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #203a43;
+}
+
+/* Sections */
+
+.emp-info,
+.emp-contact,
+.emp-address {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.emp-info p,
+.emp-contact p,
+.emp-address p {
+  margin-bottom: 6px;
+}
+
+/* Buttons */
+
+.emp-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.emp-actions .btn {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Edit Button */
+
+.edit-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #3d8b40;
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+
+.delete-btn {
+  background: #e53935;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #employees-container {
+    padding: 20px;
+  }
+}
