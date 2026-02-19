@@ -92,5 +92,5 @@ async function handleDelete(id) {
 
 function handleEdit(id)
 {
-  window.location.href=`./EditEmployee.html?id=${id}`;
+  window.location.href=`EditEmployee.html?id=${id}`;
 }

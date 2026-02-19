@@ -44,7 +44,7 @@ employeeFormEle.addEventListener("submit", async (e) => {
     console.log(resp);
 
     //NAVIGATION
-    window.location.href = "./Allemployees.html";
+    window.location.href = "AllEmployees.html";
   } 
   
   catch (err) {
